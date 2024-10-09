@@ -1,0 +1,61 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.pyo
+*.db
+
+# Virtual environment folder
+venv/
+env/
+ENV/
+
+# Ignore .env file for environment variables
+.env
+
+# Database files
+*.sqlite3
+
+# Media and static files (if you're generating these dynamically)
+media/
+staticfiles/
+
+# Ignore node_modules if using JavaScript libraries (for example, with React)
+node_modules/
+
+# Ignore compiled static files
+/static/
+
+# Ignore IDE/editor configuration files
+.vscode/
+.idea/
+
+# Ignore Excel and CSV files
+*.csv
+*.xlsx
+
+# Ignore macOS-specific files
+.DS_Store
+
+# Ignore coverage reports
+htmlcov/
+.coverage
+*.cover
+*.py,cover
+
+# Ignore pytest cache
+.pytest_cache/
+
+# Ignore pipenv, poetry virtualenvs
+.pipenv/
+poetry.lock
+
+# Ignore temporary files created by editors or operating systems
+*.swp
+*~
