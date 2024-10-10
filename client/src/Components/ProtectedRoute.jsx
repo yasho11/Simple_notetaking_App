@@ -4,7 +4,7 @@ import api from "../api"; // Import the API instance for making requests to the 
 import { REFRESH_TOKEN, ACCESS_TOKEN } from "../constant"; // Constants for accessing token keys in localStorage
 import { useState, useEffect } from "react"; // React hooks for managing state and side effects
 
-// A component that protects certain routes and redirects unauthenticated users to the login page
+// A component that protects certain routes and redirects unauthenticated users to the Login page
 function ProtectedRoute({ children }) {
     const [isAuthorized, setIsAuthorized] = useState(null); // State to track if the user is authorized
 
@@ -62,8 +62,8 @@ function ProtectedRoute({ children }) {
         return <div>Loading....</div>;
     }
 
-    // If user is authorized, render the protected content (children); otherwise, navigate to login
-    return isAuthorized ? children : <Navigate to="/login" />;
+    // If user is authorized, render the protected content (children); otherwise, navigate to Login
+    return isAuthorized ? children : <Navigate to="/Login" />;
 }
 
 export default ProtectedRoute;
