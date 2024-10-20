@@ -3,6 +3,7 @@ import api from "../api";
 import { useNavigate } from "react-router-dom";
 import { ACCESS_TOKEN, REFRESH_TOKEN } from "../constant";
 import "../styles/Form.css";
+import LoadingIndicator from "./LoadingIndicator";
 
 function Form({ route, method }) {
     // Local state for username, password, and loading indicator
@@ -72,6 +73,7 @@ function Form({ route, method }) {
                 placeholder="Password"
                 required
             />
+            (loading && <LoadingIndicator/>)
 
             {/* Submit button for the form, showing a loading message if the request is in progress */}
             <button className="form-button" type="submit" disabled={loading}>
